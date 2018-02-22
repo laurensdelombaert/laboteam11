@@ -32,7 +32,9 @@ nav {
     max-width: 50px;
 }
 
-.kweeni header {
+/* KWEENI */
+
+.kweeni header, .watis header {
     background: #FFEEF0;
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
@@ -41,7 +43,7 @@ nav {
     padding: 2em 0;
 }
 
-.kweeni header h1 {
+.kweeni header h1, .watis header h1 {
     color: #F95B33;
     margin: 0;
     text-align: center;
@@ -122,4 +124,18 @@ nav {
     text-decoration: none;
     font-size: smaller;
     font-weight: bold;
+}
+
+/* WATIS */
+
+.watis header { grid-template-rows: 1fr 1fr; }
+
+.watis header .user span { color: #F95B33; }
+
+.watis header .user img { max-width: 30px; }
+
+.watis header .user span {
+    justify-self: end;
+    align-self: end;
+    margin: 0;
 }
