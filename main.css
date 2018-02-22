@@ -139,3 +139,41 @@ nav {
     align-self: end;
     margin: 0;
 }
+
+.watis section#comments div {
+    display: grid;
+    padding: 10px;
+}
+
+.watis section#comments div article {
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.watis section#comments div article a {
+    color: black;
+    text-decoration: none;
+}
+
+.watis section#comments div img {
+    width: 30px;
+}
+
+.watis section#comments div article:not(:first-child) {
+    justify-self: end;
+    width: 70%;
+}
+
+.watis .place-comment {
+    padding: 20px 10px;
+    background: silver;
+    width: 70%;
+    justify-self: end;
+}
+
+.watis .place-comment input[type=text] {
+    border: 1px solid grey;
+    padding: 10px;
+}
