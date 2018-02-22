@@ -1,3 +1,5 @@
+body { font-family: 'Open Sans', sans-serif; }
+
 nav {
     background: #494E61;
     display: flex;
@@ -9,6 +11,11 @@ nav {
     display: grid;
     grid-template-areas: "user img"
                          "logout img";
+}
+
+h1, .kweeni header button {
+    font-family: 'Ultra', serif;
+    font-weight: 200;
 }
 
 .user span {
