@@ -31,3 +31,37 @@ nav {
     border-radius: 5px;
     max-width: 50px;
 }
+
+.kweeni header {
+    background: #FFEEF0;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.kweeni header h1 {
+    color: #F95B33;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+}
+
+.kweeni header input {
+    width: 40em;
+    padding: 1em;
+    border: 3px solid #EFADB4;
+}
+
+.kweeni header button {
+    width: 15em;
+    justify-self: center;
+    background: #3B1CFF;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
