@@ -31,3 +31,95 @@ nav {
     border-radius: 5px;
     max-width: 50px;
 }
+
+.kweeni header {
+    background: #FFEEF0;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.kweeni header h1 {
+    color: #F95B33;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+}
+
+.kweeni header input {
+    width: 40em;
+    padding: 1em;
+    border: 3px solid #EFADB4;
+}
+
+.kweeni header button {
+    width: 15em;
+    justify-self: center;
+    background: #3B1CFF;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.kweeni main {
+    background: #E3E3E3;
+    padding: 2em 1em;
+}
+
+.kweeni h1 {
+    margin: 0;
+    text-align: center;
+    color: #494E61;
+}
+
+.kweeni .topic {
+    display: grid;
+    grid-template-columns: 4.5em 1fr 20em;
+    align-items: center;
+    padding: 0 0.5em;
+    border-bottom: 1px solid #EEEEEE;
+    grid-gap: 1em;
+}
+
+.kweeni .icon-cool {
+    background: #EEEEEE;
+    display: flex;
+    padding: 0.8em;
+    justify-content: space-between;
+    align-items: center;
+    color: #838DB0;
+    font-size: smaller;
+}
+
+.kweeni .icon-cool img {
+    max-width: 20px;
+}
+
+.kweeni p {
+    color: #494E61;
+}
+
+.kweeni .topic-user {
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.kweeni .topic-user img {
+    margin: 1em;
+    border-radius: 4px;
+    max-width: 40px;
+}
+
+.kweeni .topic-user a {
+    color: #D9806A;
+    text-decoration: none;
+    font-size: smaller;
+    font-weight: bold;
+}
