@@ -1,0 +1,33 @@
+nav {
+    background: #494E61;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+.user {
+    display: grid;
+    grid-template-areas: "user img"
+                         "logout img";
+}
+
+.user span {
+    grid-area: user;
+    align-self: end;
+    justify-self: end;
+    color: #99A0BB;
+}
+
+.user a {
+    grid-area: logout;
+    align-self: start;
+    justify-self: end;
+    color: #EE9D9D;
+}
+
+.user img {
+    grid-area: img;
+    margin: 1em;
+    border-radius: 5px;
+    max-width: 50px;
+}
