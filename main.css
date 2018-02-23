@@ -248,6 +248,7 @@ nav {
     background: #494E61;
     width: 100%;
     padding: 25px 10;
+    margin: 50px 0;
 }
 
 .watis .place-comment.top-level form { display: grid; }
