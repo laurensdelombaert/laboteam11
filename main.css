@@ -1,7 +1,18 @@
 body { font-family: 'Open Sans', sans-serif; }
 
+* { box-sizing: border-box; }
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
 nav {
     background: #494E61;
+    
+}
+
+nav .container {
     display: flex;
     justify-content: space-between;
     padding-left: 1em;
@@ -39,8 +50,10 @@ h1, .kweeni header button {
     max-width: 50px;
 }
 
-.kweeni header {
-    background: #FFEEF0;
+/* KWEENI */
+
+.kweeni header, .watis header {
+    background: #fff6f7;
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
     grid-gap: 1em;
@@ -48,20 +61,20 @@ h1, .kweeni header button {
     padding: 2em 0;
 }
 
-.kweeni header h1 {
+.kweeni header h1, .watis header h1 {
     color: #F95B33;
     margin: 0;
     text-align: center;
     align-self: center;
 }
 
-.kweeni header input {
+.kweeni header input, .watis div.place-comment.place-comment.top-level input[type=submit]  {
     width: 40em;
     padding: 1em;
     border: 3px solid #EFADB4;
 }
 
-.kweeni header button {
+.kweeni header button, .watis div.place-comment.place-comment.top-level input[type=submit] {
     width: 15em;
     justify-self: center;
     background: #3B1CFF;
@@ -73,7 +86,7 @@ h1, .kweeni header button {
     border-radius: 5px;
 }
 
-.kweeni main {
+.kweeni aside {
     background: #E3E3E3;
     padding: 2em 1em;
 }
@@ -129,4 +142,157 @@ h1, .kweeni header button {
     text-decoration: none;
     font-size: smaller;
     font-weight: bold;
+}
+
+/* WATIS */
+
+.watis header {
+    grid-template: 1fr 2fr / 100%;
+    padding: 2em 0 0 0;
+    margin-bottom: 2em;
+}
+
+.watis header .user { margin: 2em 0; }
+
+.watis header .user span, .watis header .user a, .watis section#comments a.author { color: #F95B33; }
+
+.watis header .user a, .watis section#comments a.author {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.watis header .user img {
+    max-width: 30px;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.watis header .user span {
+    justify-self: end;
+    align-self: end;
+    margin: 0;
+    font-style: italic;
+}
+
+.watis aside#like { background: #ffeef0; }
+
+.watis aside#like .wrapper {
+    display: grid;
+    grid-template: 100% / 10em 1fr;
+}
+
+.watis aside#like .likes {
+    grid-template: 50% 50% / 100%;
+    display: grid;
+    grid-gap: 0.5em 0;
+    align-items: center;
+    background: #f6e5e7;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.watis aside#like .likes img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.watis aside#like .likes span {
+    font-size: 1.5em;
+    color: #3B1CFF;
+}
+
+.watis aside#like .likes a {
+    grid-area: 2 / 1 / 2 / -1;
+    font-size: .9em;
+    color: #3B1CFF;
+}
+
+.watis aside#like .likers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20px);
+    grid-gap: 0.3em;
+    align-content: center;
+    padding: 25px;
+}
+
+.watis aside#like .likers img {
+    width: 20px;
+    border-radius: 5px;
+}
+
+.watis section#comments div {
+    display: grid;
+    padding: 10px;
+}
+
+.watis section#comments div article {
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.watis section#comments div article a {
+    color: black;
+    text-decoration: none;
+}
+
+.watis section#comments div img {
+    width: 30px;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 0.3em;
+}
+
+.watis section#comments div article:not(:first-child) {
+    justify-self: end;
+    width: 70%;
+}
+
+.watis .place-comment {
+    padding: 20px 10px;
+    background: #f6f6f6;
+    width: 70%;
+    justify-self: end;
+}
+
+.watis .place-comment input[type=text] {
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+}
+
+.watis .place-comment.top-level {
+    background: #494E61;
+    width: 100%;
+    padding: 25px 10;
+    margin: 50px 0;
+}
+
+.watis .place-comment.top-level form { display: grid; }
+
+.watis section#comments .place-comment.top-level img.user { width: 50px; }
+
+.watis section#comments .place-comment.top-level div {  grid-template: 100% / 50px 1fr; }
+
+.watis div.place-comment.place-comment.top-level input[type=submit] { border-radius: 0; margin: 20px; }
+
+@media (min-width: 50em) {
+    .watis header { grid-template:  1fr 1fr / 100%; }
+    .watis header h1 { grid-area: 1 / 1 / 1 / -1; }
+    .watis header .grid-wrapper { background: #ffeef0; }
+    .watis header .grid-wrapper .container {
+        display: grid;
+        grid-template: 100% / 55% 45%;
+    }
+    .watis header .user { grid-area: 2 / 2; justify-self: end; }
+    .watis aside#like { grid-area: 2; }
+    .watis .place-comment.top-level form {
+        grid-template: 100% / 1fr 240px;
+        align-items: center;
+    }
+    .watis section#comments .place-comment.top-level div { padding-right: 0; }
+    .watis .place-comment input[type=text] {
+        height: 50px;
+    }
 }
