@@ -37,7 +37,7 @@ nav {
 /* KWEENI */
 
 .kweeni header, .watis header {
-    background: #FFEEF0;
+    background: #fff6f7;
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
     grid-gap: 1em;
@@ -174,7 +174,7 @@ nav {
 }
 
 .watis main#like .likes span {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #3B1CFF;
 }
 
