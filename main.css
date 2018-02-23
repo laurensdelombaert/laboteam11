@@ -7,6 +7,10 @@
 
 nav {
     background: #494E61;
+    
+}
+
+nav .container {
     display: flex;
     justify-content: space-between;
     padding-left: 1em;
@@ -157,7 +161,9 @@ nav {
     font-style: italic;
 }
 
-.watis main#like {
+.watis main#like { background: #ffeef0; }
+
+.watis main#like .container {
     display: grid;
     grid-template: 100% / 9em 1fr;
 }
@@ -194,7 +200,6 @@ nav {
     grid-template-columns: repeat(auto-fill, 20px);
     grid-gap: 0.3em;
     align-content: center;
-    background: #ffeef0;
     padding: 25px;
 }
 
