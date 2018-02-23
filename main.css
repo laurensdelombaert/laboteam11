@@ -171,13 +171,13 @@ nav .container {
 
 .watis aside#like .wrapper {
     display: grid;
-    grid-template: 100% / 9em 1fr;
+    grid-template: 100% / 10em 1fr;
 }
 
 .watis aside#like .likes {
-    grid-template: 50% 50% / 25px 1fr;
+    grid-template: 50% 50% / 100%;
     display: grid;
-    grid-gap: 0 0.5em;
+    grid-gap: 0.5em 0;
     align-items: center;
     background: #f6e5e7;
     padding: 25px;
@@ -276,6 +276,7 @@ nav .container {
     .watis header .grid-wrapper { background: #ffeef0; }
     .watis header .grid-wrapper .container {
         display: grid;
+        grid-template: 100% / 55% 45%;
     }
     .watis header .user { grid-area: 2 / 2; justify-self: end; }
     .watis aside#like { grid-area: 2; }
