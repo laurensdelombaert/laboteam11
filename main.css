@@ -151,6 +151,52 @@ nav {
     margin: 0;
 }
 
+.watis main#like {
+    display: grid;
+    grid-template: 100% / 9em 1fr;
+}
+
+.watis main#like .likes {
+    grid-template: 50% 50% / 25px 1fr;
+    display: grid;
+    grid-gap: 0 0.5em;
+    align-items: center;
+    background: #f6e5e7;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.watis main#like .likes img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.watis main#like .likes span {
+    font-size: 2em;
+    color: #3B1CFF;
+}
+
+.watis main#like .likes a {
+    grid-area: 2 / 1 / 2 / -1;
+    font-size: .9em;
+    color: #3B1CFF;
+}
+
+.watis main#like .likers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20px);
+    grid-gap: 0.3em;
+    align-content: center;
+    background: #ffeef0;
+    padding: 25px;
+}
+
+.watis main#like .likers img {
+    width: 20px;
+    border-radius: 5px;
+}
+
 .watis section#comments div {
     display: grid;
     padding: 10px;
