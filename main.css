@@ -79,7 +79,7 @@ nav .container {
     border-radius: 5px;
 }
 
-.kweeni main {
+.kweeni aside {
     background: #E3E3E3;
     padding: 2em 1em;
 }
@@ -161,14 +161,14 @@ nav .container {
     font-style: italic;
 }
 
-.watis main#like { background: #ffeef0; }
+.watis aside#like { background: #ffeef0; }
 
-.watis main#like .container {
+.watis aside#like .container {
     display: grid;
     grid-template: 100% / 9em 1fr;
 }
 
-.watis main#like .likes {
+.watis aside#like .likes {
     grid-template: 50% 50% / 25px 1fr;
     display: grid;
     grid-gap: 0 0.5em;
@@ -179,23 +179,23 @@ nav .container {
     font-weight: bold;
 }
 
-.watis main#like .likes img {
+.watis aside#like .likes img {
     width: 25px;
     vertical-align: middle;
 }
 
-.watis main#like .likes span {
+.watis aside#like .likes span {
     font-size: 1.5em;
     color: #3B1CFF;
 }
 
-.watis main#like .likes a {
+.watis aside#like .likes a {
     grid-area: 2 / 1 / 2 / -1;
     font-size: .9em;
     color: #3B1CFF;
 }
 
-.watis main#like .likers {
+.watis aside#like .likers {
     display: grid;
     grid-template-columns: repeat(auto-fill, 20px);
     grid-gap: 0.3em;
@@ -203,7 +203,7 @@ nav .container {
     padding: 25px;
 }
 
-.watis main#like .likers img {
+.watis aside#like .likers img {
     width: 20px;
     border-radius: 5px;
 }
