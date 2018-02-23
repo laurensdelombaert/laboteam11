@@ -130,9 +130,18 @@ nav {
 
 .watis header { grid-template-rows: 1fr 1fr; }
 
-.watis header .user span { color: #F95B33; }
+.watis header .user span, .watis header .user a, .watis section#comments a.author { color: #F95B33; }
 
-.watis header .user img { max-width: 30px; }
+.watis header .user a, .watis section#comments a.author {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.watis header .user img {
+    max-width: 30px;
+    margin: 0 10px;
+    align-self: center;
+}
 
 .watis header .user span {
     justify-self: end;
