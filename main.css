@@ -278,6 +278,9 @@ h1, .kweeni header button {
 .watis div.place-comment.place-comment.top-level input[type=submit] { border-radius: 0; margin: 20px; }
 
 @media (min-width: 50em) {
+    /* KWEENI */
+    .kweeni h1 { margin: 2em; }
+    /* WATIS */
     .watis header { grid-template:  1fr 1fr / 100%; }
     .watis header h1 { grid-area: 1 / 1 / 1 / -1; }
     .watis header .grid-wrapper { background: #ffeef0; }
