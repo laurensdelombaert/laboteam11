@@ -140,10 +140,12 @@ nav .container {
 /* WATIS */
 
 .watis header {
-    grid-template: 1fr 1fr 1fr / 100%;
+    grid-template: 1fr 2fr / 100%;
     padding: 2em 0 0 0;
     margin-bottom: 2em;
 }
+
+.watis header .user { margin: 2em 0; }
 
 .watis header .user span, .watis header .user a, .watis section#comments a.author { color: #F95B33; }
 
