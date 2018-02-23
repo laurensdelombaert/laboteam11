@@ -257,3 +257,14 @@ nav {
 .watis section#comments .place-comment.top-level div {  grid-template: 100% / 50px 1fr; }
 
 .watis div.place-comment.place-comment.top-level input[type=submit] { border-radius: 0; margin: 20px; }
+
+@media (min-width: 50em) {
+    .watis .place-comment.top-level form {
+        grid-template: 100% / 1fr 240px;
+        align-items: center;
+    }
+    .watis section#comments .place-comment.top-level div { padding-right: 0; }
+    .watis .place-comment input[type=text] {
+        height: 50px;
+    }
+}
