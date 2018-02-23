@@ -149,6 +149,7 @@ nav {
     justify-self: end;
     align-self: end;
     margin: 0;
+    font-style: italic;
 }
 
 .watis main#like {
