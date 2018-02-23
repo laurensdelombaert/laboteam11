@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 nav {
     background: #494E61;
     display: flex;
@@ -50,13 +52,13 @@ nav {
     align-self: center;
 }
 
-.kweeni header input {
+.kweeni header input, .watis div.place-comment.place-comment.top-level input[type=submit]  {
     width: 40em;
     padding: 1em;
     border: 3px solid #EFADB4;
 }
 
-.kweeni header button {
+.kweeni header button, .watis div.place-comment.place-comment.top-level input[type=submit] {
     width: 15em;
     justify-self: center;
     background: #3B1CFF;
@@ -189,3 +191,17 @@ nav {
     border: 1px solid grey;
     padding: 10px;
 }
+
+.watis .place-comment.top-level {
+    background: #494E61;
+    width: 100%;
+    padding: 25px 10;
+}
+
+.watis .place-comment.top-level form { display: grid; }
+
+.watis section#comments .place-comment.top-level img.user { width: 50px; }
+
+.watis section#comments .place-comment.top-level div {  grid-template: 100% / 50px 1fr; }
+
+.watis div.place-comment.place-comment.top-level input[type=submit] { border-radius: 0; margin: 20px; }
