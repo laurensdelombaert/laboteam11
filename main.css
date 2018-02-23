@@ -168,6 +168,9 @@ nav {
 
 .watis section#comments div img {
     width: 30px;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 0.3em;
 }
 
 .watis section#comments div article:not(:first-child) {
