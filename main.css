@@ -167,7 +167,7 @@ nav .container {
 
 .watis aside#like { background: #ffeef0; }
 
-.watis aside#like .container {
+.watis aside#like .wrapper {
     display: grid;
     grid-template: 100% / 9em 1fr;
 }
@@ -269,6 +269,14 @@ nav .container {
 .watis div.place-comment.place-comment.top-level input[type=submit] { border-radius: 0; margin: 20px; }
 
 @media (min-width: 50em) {
+    .watis header { grid-template:  1fr 1fr / 100%; }
+    .watis header h1 { grid-area: 1 / 1 / 1 / -1; }
+    .watis header .grid-wrapper { background: #ffeef0; }
+    .watis header .grid-wrapper .container {
+        display: grid;
+    }
+    .watis header .user { grid-area: 2 / 2; justify-self: end; }
+    .watis aside#like { grid-area: 2; }
     .watis .place-comment.top-level form {
         grid-template: 100% / 1fr 240px;
         align-items: center;
