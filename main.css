@@ -56,14 +56,24 @@ h1, .kweeni header button {
 
 #logo img
 {
-    width: 200px;
+    width: 150px;
     display: block;
     margin: 0 auto;
 }
 
-header.homepage
+.homepage header
 {
     background-color:#DCDCDC;
+    padding: 1em 1em 1.5em 1em;
+}
+
+.homepage header p
+{
+    text-align: left;
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 1em;
+    font-size: 1.5em;
 }
 
 /* KWEENI */
