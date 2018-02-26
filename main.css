@@ -49,6 +49,14 @@ h1, .kweeni header button {
     border-radius: 5px;
     max-width: 50px;
 }
+/* HOME */
+
+#logo img
+{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
 
 /* KWEENI */
 
