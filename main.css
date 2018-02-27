@@ -197,6 +197,7 @@ h1, .kweeni header button, .homepage header button, .homepage about h1 {
     display:grid;
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
+    padding-top:2em;
 }
 
 .about article
