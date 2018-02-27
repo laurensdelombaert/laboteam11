@@ -27,7 +27,7 @@ nav .container {
                          "logout img";
 }
 
-h1, .kweeni header button {
+h1, .kweeni header button, .homepage header button {
     font-family: 'Ultra', serif;
     font-weight: 200;
 }
@@ -100,7 +100,7 @@ h1, .kweeni header button {
     border: 3px solid #EFADB4;
 }
 
-.kweeni header button, .watis div.place-comment.place-comment.top-level input[type=submit] {
+.kweeni header button, .watis div.place-comment.place-comment.top-level input[type=submit], .homepage header button {
     width: 15em;
     justify-self: center;
     background: #3B1CFF;
