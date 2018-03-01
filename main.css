@@ -70,12 +70,17 @@ header
     font-weight: 800;
 }
 
+.button
+{
+    text-align: center;
+    margin: 2em;
+}
+
 .part1
 {
     display:grid;
     grid-template-columns: 2fr 1fr;
-    justify-items: center;
-    
+    justify-items: center; 
 }
 
 .part1 #logo img
@@ -94,13 +99,13 @@ header
 {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    padding-bottom:2em;
 }
 
 .part2 p
 {
     grid-column: 1/-1;
-    padding: 0 1em;
-    
+    padding: 0 1em;  
 }
 
 .part2 img
@@ -136,6 +141,9 @@ header
 .about article h1
 {
     justify-self:start;
+    color:#494E61;
+    font-weight: 1000;
+  
 }
 .about article .txt
 {
@@ -267,7 +275,7 @@ header
     border: 3px solid #EFADB4;
 }
 
-.kweeni header button, .watis div.place-comment.place-comment.top-level input[type=submit], .homepage header button {
+.kweeni header button, .watis div.place-comment.place-comment.top-level input[type=submit], .homepage header .button {
     width: 15em;
     justify-self: center;
     background: #3B1CFF;
@@ -349,7 +357,7 @@ header
 
 .watis header .user span, .watis header .user a, .watis section#comments a.author { color: #F95B33; }
 
-.watis header .user a, .watis section#comments a.author {
+.watis header .user a, .watis section#comments a.author, .homepage header a {
     text-decoration: none;
     font-weight: bold;
 }
