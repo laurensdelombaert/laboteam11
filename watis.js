@@ -5,7 +5,7 @@ const config = {
     port: 3000,
 };
 
-app.get('/', (req, res) => {
+app.get('/watis', (req, res) => {
     res.send('Hello World')
 });
 
