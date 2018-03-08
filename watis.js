@@ -12,8 +12,8 @@ const config = {
 
 app.get('/watis', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
-    res.write(watIs());
     res.write(nav());
+    res.write(watIs());
     res.end();
 });
 
