@@ -1,0 +1,19 @@
+{
+  "name": "laboteam11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "watis.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurensdelombaert/laboteam11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurensdelombaert/laboteam11/issues"
+  },
+  "homepage": "https://github.com/laurensdelombaert/laboteam11#readme"
+}
