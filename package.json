@@ -2,7 +2,7 @@
   "name": "laboteam11",
   "version": "1.0.0",
   "description": "",
-  "main": "watis.html",
+  "main": "watis.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
