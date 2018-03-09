@@ -1,65 +1,68 @@
-header
-    h1 "Wat is Express.js en waarvoor dient het?"
-    .grid-wrapper
-        .container
-            .user
-                span 12 minuten geleden gevraagd door
+extends layout.pug
+
+append body
+    header
+        h1 "Wat is Express.js en waarvoor dient het?"
+        .grid-wrapper
+            .container
+                .user
+                    span 12 minuten geleden gevraagd door
+                    a Anneke Kodeur
+                    img.user-avatar(src="images/user8.png")
+                aside#like
+                    .wrapper
+                        .likes
+                            div
+                            img(src="images/icon-cool.svg" alt="Icon cool")
+                            span x20
+                            
+                            a Like deze vraag
+                        .likers
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+                            img(src="images/user8.png")
+    section#comments.container
+        div
+            article
+                p  Op de site staat: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+                img(src="images/user1.png" alt="Jay Ba-Kend")
+                a Jay Ba-Kend
+            article
+                p  Thanks. Waar waarvoor dient dat eigenlijk? Frontend?
+                img(src="images/user8.png" alt="Anneke Kodeur")
                 a Anneke Kodeur
-                img.user-avatar(src="images/user8.png")
-            aside#like
-                .wrapper
-                    .likes
-                        div
-                           img(src="images/icon-cool.svg" alt="Icon cool")
-                           span x20
-                        
-                        a Like deze vraag
-                    .likers
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-                        img(src="images/user8.png")
-section#comments.container
-    div
-        article
-            p  Op de site staat: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-            img(src="images/user1.png" alt="Jay Ba-Kend")
-            a Jay Ba-Kend
-        article
-            p  Thanks. Waar waarvoor dient dat eigenlijk? Frontend?
-            img(src="images/user8.png" alt="Anneke Kodeur")
-            a Anneke Kodeur
-        article
-            p  ee het is puur voor de backend. Vergelijk het met PHP. In je frontend kan je nog altijd gebruik maken van jQuery ofzo als je dat wil.
-            img(src="images/user2.png" alt="Jef Dev")
-            a Jef Dev
-        .place-comment
-            input(type="text" placeholder="Plaats commentaar...")
-    div
-        article
-            p  Express.js is eigenlijk gewoon een soort van bibliotheek met een hele hoop functies die het makkelijker maken om app ste schrijven in nodejs. Een beetje zoals jQuery in frontend. Maar dan voor je back-end werk.
-            img(src="images/user7.png" alt="Som Wan")
-            a Som Wan
-        .place-comment
-            input(type="text" placeholder="Plaats commentaar...")
-    .place-comment.top-level
-        form(method="post")
-            div
-                img.user(src="images/user8.png")
-                input(type="text" name="new-comment" placeholder="Reageer hier op deze vraag")
-            
-            input(type="submit" value="reageren")
-    
+            article
+                p  ee het is puur voor de backend. Vergelijk het met PHP. In je frontend kan je nog altijd gebruik maken van jQuery ofzo als je dat wil.
+                img(src="images/user2.png" alt="Jef Dev")
+                a Jef Dev
+            .place-comment
+                input(type="text" placeholder="Plaats commentaar...")
+        div
+            article
+                p  Express.js is eigenlijk gewoon een soort van bibliotheek met een hele hoop functies die het makkelijker maken om app ste schrijven in nodejs. Een beetje zoals jQuery in frontend. Maar dan voor je back-end werk.
+                img(src="images/user7.png" alt="Som Wan")
+                a Som Wan
+            .place-comment
+                input(type="text" placeholder="Plaats commentaar...")
+        .place-comment.top-level
+            form(method="post")
+                div
+                    img.user(src="images/user8.png")
+                    input(type="text" name="new-comment" placeholder="Reageer hier op deze vraag")
+                
+                input(type="submit" value="reageren")
         
+            
