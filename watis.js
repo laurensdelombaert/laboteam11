@@ -7,7 +7,6 @@ const pug = require('pug');
 
 const layout = pug.compileFile('layout.pug');
 //const watIs = pug.compileFile('watis.pug');
-//const nav = pug.compileFile('nav.pug');
 
 const config = {
     port: 3000,
@@ -18,7 +17,6 @@ app.use(express.static('public'));
 app.get('/watis', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.write(layout());
-    //res.write(nav());
     //res.write(watIs());
     res.end();
 });
