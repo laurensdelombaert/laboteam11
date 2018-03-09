@@ -16,7 +16,11 @@ app.use(express.static('public'));
 
 app.get('/watis', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
-    res.write(watIs());
+    res.write(watIs({
+        avatar: "user8.png",
+        user: "Anneke Kodeur",
+        likes: 20
+    }));
     res.end();
 });
 
