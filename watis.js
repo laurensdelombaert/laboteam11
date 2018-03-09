@@ -5,7 +5,6 @@ app.use("/public", express.static(path.join(__dirname, 'public')));
 
 const pug = require('pug');
 
-const layout = pug.compileFile('layout.pug');
 const watIs = pug.compileFile('watis.pug');
 
 const config = {
@@ -14,7 +13,7 @@ const config = {
 
 app.use(express.static('public'));
 
-app.get('/watis', (req, res) => {
+app.get('/kweenie/wat-is-express-js-en-waarvoor-dient-het', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.write(watIs({
         avatar: "user8.png",
