@@ -16,7 +16,6 @@ app.use(express.static('public'));
 
 app.get('/watis', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
-    res.write(layout());
     res.write(watIs());
     res.end();
 });
