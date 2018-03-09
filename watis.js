@@ -8,7 +8,7 @@ const pug = require('pug');
 const watIs = pug.compileFile('watis.pug');
 
 const config = {
-    port: 3000 || process.env.PORT,
+    port: process.env.PORT || 3000,
 };
 
 app.use(express.static('public'));
